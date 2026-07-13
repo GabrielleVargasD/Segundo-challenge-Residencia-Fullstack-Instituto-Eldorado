@@ -1,4 +1,4 @@
-# Segundo-challenge-Residencia-Fullstack-Instituto-Eldorado
+# ScamScoreJava
 
 ### Integrantes: Gabrielle, Thiago, Ronaldo e Mary
 
