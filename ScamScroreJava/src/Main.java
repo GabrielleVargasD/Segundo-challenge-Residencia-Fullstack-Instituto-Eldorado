@@ -8,7 +8,13 @@ public class Main {
 
         System.out.println("Digite a mensagem: ");
         String mensagem = teclado.nextLine().toLowerCase();
-        mensagem = mensagem.replaceAll("[^a-záàâãéèêíìîóòôõúùûç0-9 ]", ""); //PESQUISAR SOBRE
+        mensagem = mensagem.replaceAll("[^a-záàâãéèêíìîóòôõúùûç0-9 ]", ""); //Removendo tudo que não é numero ou letras
+        mensagem = mensagem.replaceAll("[áàâã]", "a"); // substitui as letras com acentos por sem acento
+        mensagem = mensagem.replaceAll("[éèê]", "e");
+        mensagem = mensagem.replaceAll("[íìî]", "i");
+        mensagem = mensagem.replaceAll("[óòôõ]", "o");
+        mensagem = mensagem.replaceAll("[úùû]", "u");
+        mensagem = mensagem.replaceAll("[ç]", "c");
         System.out.println(mensagem);
 
         //Palavras
@@ -167,7 +173,7 @@ public class Main {
         Map<String, Integer> frases = Map.ofEntries(
 
                 // PIX
-                Map.entry("faça um pix", 6),
+                Map.entry("faca um pix", 6),
                 Map.entry("realize um pix", 6),
                 Map.entry("envie um pix", 6),
                 Map.entry("pix urgente", 6),
@@ -242,7 +248,6 @@ public class Main {
         } else {
             System.out.println("🔴 Risco alto de golpe");
         }
-
 
     System.out.println("A pontuação de suspeita da mensagem foi: " + pontuacao);
 
